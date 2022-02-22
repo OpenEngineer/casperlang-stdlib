@@ -7,7 +7,7 @@ Include following `package.json` in root of your casper project:
 {
   "dependencies": {
     "std": {
-      "version": "0.1.0",
+      "version": "0.1.1",
       "url": "github.com/openengineer/casperlang-stdlib"
     }
   }
