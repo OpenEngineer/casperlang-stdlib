@@ -1,0 +1,6 @@
+. l::[] i::Int        = get l i
+. l::[] (Just i::Int) = get l i
+. l::[] Nothing       = Nothing
+
+join lst::([] String) = fold \(if ((len $1) > 0 && (len $2) > 0) ($1 + " " + $2) $2) "" lst
+show lst::[] = join (map \(show $) lst)

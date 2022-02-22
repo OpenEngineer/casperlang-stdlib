@@ -1,0 +1,12 @@
+void              = echo ""
+println s::String = echo s + "\n"
+
+= a::Any fn::\1 = fn a
+
+Return a::Any = Any
+
+; (Return a::Any) _ = a
+;  Ok             b = b
+
+herr (Error msg::String) = Return (println "Error: " + msg)
+herr  Any                = Ok

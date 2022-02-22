@@ -1,0 +1,5 @@
+show (Just x) = show x
+show Nothing  = ""
+
+toError _           (Just x) = x
+toError msg::String Nothing  = Error msg

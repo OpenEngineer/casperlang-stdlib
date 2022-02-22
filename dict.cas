@@ -1,0 +1,1 @@
+. d::{} k::String = get d k

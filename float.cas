@@ -1,0 +1,4 @@
+showf (Just f::Float) = showf f
+showf Nothing = ""
+
+show f::Float = showf f
