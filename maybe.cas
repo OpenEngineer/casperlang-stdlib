@@ -3,3 +3,6 @@ show Nothing  = ""
 
 toError _           (Just x) = x
 toError msg::String Nothing  = Error msg
+
+assertJust (Just x) = x
+assertJust Nothing = panic "not just"
