@@ -13,3 +13,6 @@ show False = "false"
 
 ! True = False
 ! False = True
+
+if True  a _ = a
+if False _ b = b
