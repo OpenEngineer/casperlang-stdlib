@@ -1,1 +1,6 @@
 base (Path path) = (split pathSeparator path).(-1)
+ext p::Path = 
+  parts = split "." (base p);
+  if (len parts) > 1 (parts.(-1)) ""
+
+join p::(Path path) s::String = Path path + pathSeparator + s
