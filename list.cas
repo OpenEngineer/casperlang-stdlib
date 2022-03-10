@@ -2,8 +2,8 @@
 . l::[] (Just i::Int) = get l i
 . l::[] Nothing       = Nothing
 
-join lst::([] String) = fold \(if ((len $1) > 0 && (len $2) > 0) ($1 + " " + $2) $2) "" lst
-show lst::[] = join (map \(show $) lst)
+join sep::String lst::([] String) = fold \(if ((len $1) > 0 && (len $2) > 0) ($1 + sep + $2) $2) "" lst
+show lst::[] = join " " (map \(show $) lst)
 
 _zip a::[] b::[] = map \([$2, assertJust b.$1]) a
 zip a::[] b::[] = if ((len a) < (len b)) (_zip a b) (_zip b a)
