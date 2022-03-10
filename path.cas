@@ -1,0 +1,1 @@
+base (Path path) = (split pathSeparator path).(-1)
