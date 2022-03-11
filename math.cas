@@ -1,0 +1,17 @@
++ a::Int b::Float = (toFloat a) + b
++ a::Float b::Int = a + (toFloat b)
+- a::Int b::Float = (toFloat a) - b
+- a::Float b::Int = a - (toFloat b)
+* a::Int b::Float = (toFloat a) * b
+* a::Float b::Int = a * (toFloat b)
+/ a::Int b::Float = (toFloat a) / b
+/ a::Float b::Int = a / (toFloat b)
+sin a::Int = sin (toFloat a)
+cos a::Int = cos (toFloat a)
+tan a::Int = tan (toFloat a)
+asin a::Int = asin (toFloat a)
+acos a::Int = acos (toFloat a)
+atan a::Int = atan (toFloat a)
+log a::Int = log (toFloat a)
+exp a::Int = exp (toFloat a)
+pow a::Int b::Int = pow (toFloat a) (toFloat b)
